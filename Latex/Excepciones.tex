@@ -1,0 +1,152 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+\title[Exceptions]{\bf\Huge Exceptions in Java }
+\subtitle{Fundamentals to programming I}
+
+\author[Jaelhp]
+{
+	Jael Emerson Huarca Pallani \inst{1}
+}
+\institute[UNSA]
+{
+\inst{1}% 
+System Engineering School\\
+System Engineering and Informatic Department\\
+Production and Services Faculty\\
+San Agustin National University of Arequipa
+}
+\date[2020-08-01]{\scriptsize{2020-08-01}}
+%\logo{\includegraphics[width=3.0cm]{Img/logo_unsa.jpg} }
+\titlegraphic{\includegraphics[width=3.0cm]{Img/logo_unsa.jpg} }
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Content}
+\tableofcontents
+\end{frame}
+
+\section{Exceptions - Definition}
+\begin{frame}
+\frametitle{Exception - Definition}
+\begin{itemize}
+\item 
+
+An exception is an abnormal situation that can occur when we run a certain program.
+Exceptions are a way of trying to ensure that if a source code does not run as intended initially, the programmer is able to control that situation and say how the program should respond.
+
+\end{itemize}
+\end{frame}
+ 
+\section{Hierarchy of exceptions}
+\begin{frame}
+\frametitle{Hierarchy of exceptions}
+\begin{center}
+{\includegraphics[width=8.0cm]{Img/Exception-in-java.png}  }
+\end{center}
+\end{frame}
+
+\section{Examples - Basics}
+\begin{frame}
+\frametitle{Examples - Basics}
+\begin{center}
+{\includegraphics[width=8.0cm]{Img/Examplebasic.PNG}   }
+\end{center}
+\end{frame}
+
+\section{Examples - Basics1}
+\begin{frame}
+\frametitle{Examples - Basics1}
+\begin{center}
+{\includegraphics[width=8.0cm]{Img/Examplebasic1.png}  }
+\end{center}
+\end{frame}
+
+
+\section{Example - Advanced}
+\begin{frame}
+\frametitle{Example - Advanced}
+\begin{center}
+{\includegraphics[width=8.0cm]{Img/ExampleAdvanced.PNG}   }
+\end{center}
+\end{frame}
+
+
+
+
+\section{References}
+%References frame
+\begin{frame}
+\frametitle{References - Web pages}
+\begin{itemize}
+
+\item \url{https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html}
+\item \url{https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-ide-enterprise-java-developers}
+\item \url{https://www.youtube.com/watch?v=jYnHBbqHE3A}
+\item \url{https://elvex.ugr.es/decsai/java/}
+\item \url{https://www.youtube.com/watch?v=mCmu7Ps55Dc}
+\item \url{https://www.unirioja.es/cu/jearansa/0910/archivos/EIPR_Tema05.pdf}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+Thanks!
+
+\end{center}
+\end{frame}
+
+\end{document}
